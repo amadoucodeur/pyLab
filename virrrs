@@ -1,0 +1,22 @@
+#!python3
+
+# virrrs
+ 
+    # Initiateur de projet React:
+    # Vite
+    # React
+    # React Router
+    # Styled-compnent
+    # icons
+    # Redux
+
+
+import os
+import sys
+
+name = sys.argv[-1]
+
+os.system(f'pnpm creat vite@latest {name} --template react')
+os.chdir(name)
+os.system('pnpm i')
+os.system('pnpm i react-router-dom styled-components react-redux @reduxjs/toolkit')
